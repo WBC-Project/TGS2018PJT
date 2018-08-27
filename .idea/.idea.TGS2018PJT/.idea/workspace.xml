@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58a79a7c-5483-4d5a-bf25-b7ef6144fcd5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGS2018PJT/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGS2018PJT/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGS2018PJT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGS2018PJT/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="58a79a7c-5483-4d5a-bf25-b7ef6144fcd5" name="Default" comment="metaとか" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,11 +145,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534418498065</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="metaとか">
+      <created>1535334221148</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535334221149</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5856000" />
+    <option name="totallyTimeSpent" value="5940000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,13 +273,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/TGS/Plugins/SQride/Domain/MysqlConstruct.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/TGS/Plugins/SQride/Map/ISQLMap.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/TGS/Plugins/SQride/Component/DataBase.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Fonts/OpenSans/License!.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
