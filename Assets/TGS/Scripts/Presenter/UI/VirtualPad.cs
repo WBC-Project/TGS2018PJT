@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using Microsoft.Win32;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -8,54 +6,36 @@ namespace TGS.Presenter.Input
 {
     public class VirtualPad : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
     {    
-        [SerializeField] private Image baseImage;
-        [SerializeField] private Image stickImage;
-        [SerializeField] private float baseRadius = 50.0f;
+        [SerializeField]
+        private Image baseImage;
+        [SerializeField]
+        private Image stickImage;
+        [SerializeField]
+        private float baseRadius = 50.0f;
     
         private Camera currentCamera = null;
     
         private RectTransform baseTransform;
         private RectTransform stickTransform;
+
+        private float axisReflectionRate;
         
         private bool isInitialized = false;
-
-		private bool isShow = true;
-        private bool execute = false;
+        private bool isExecuted = false;
         
         private void Awake()
         {
             // レイキャストに干渉しないように変更
             this.baseImage.raycastTarget = false;
             this.stickImage.raycastTarget = false;
+
+            // RectTransformを割り当てる
+			this.baseTransform = this.baseImage.rectTransform;
+			this.stickTransform = this.stickImage.rectTransform;
+
+            this.axisReflectionRate = 1.0f / this.baseRadius;
             
             this.isInitialized = true;
-
-			baseTransform = baseImage.rectTransform;
-			stickTransform = stickImage.rectTransform;
-        }
-        
-        /// <summary>
-        /// 起動時処理
-        /// </summary>
-        private void OnEnable()
-        {
-            if (!this.isInitialized)
-            {
-                Debug.LogError("[VPad] 初期化エラー");
-                return;
-            }
-        }
-    
-        /// <summary>
-        /// VPad 非表示時処理
-        /// </summary>
-        private void OnDisable()
-        {
-            if (!this.isInitialized)
-            {
-                Debug.LogError("[VPad] 初期化エラー");
-                return;
-            }
         }
     
         /// <summary>
@@ -65,23 +45,25 @@ namespace TGS.Presenter.Input
         {
             if (!this.isInitialized)
             {
-                Debug.LogError("[VPad] 初期化エラー");
+                Debug.LogError("failed Initialized()");
                 return;
             }
 
-			if(!isShow || !execute)
+            // stickImageをタッチしていなければ実行しない
+			if(!this.isExecuted)
+            {
 			    return;
+            }
 
-			stickImage.rectTransform.position = (Vector2)baseTransform.position + eventData.position - eventData.pressPosition;
+			this.stickTransform.position = (Vector2)this.baseTransform.position + eventData.position - eventData.pressPosition;
 
-            baseTransform = baseImage.rectTransform;
-			stickTransform = stickImage.rectTransform;
+            float distance = Mathf.Pow(this.stickTransform.position.x - this.baseTransform.position.x, 2) + Mathf.Pow(this.stickTransform.position.y - this.baseTransform.position.y, 2);
 
-			if (Vector3.Distance(stickTransform.position, baseTransform.position) >= baseRadius)
+			if (distance >= Mathf.Pow(this.baseRadius, 2))
 			{
 				Vector3 tmp = eventData.position - eventData.pressPosition;
 
-				stickImage.transform.position = baseTransform.position + tmp.normalized * baseRadius;
+				this.stickTransform.position = this.baseTransform.position + tmp.normalized * this.baseRadius;
 			}
         }
     
@@ -92,12 +74,12 @@ namespace TGS.Presenter.Input
         {
             if (!this.isInitialized)
             {
-                Debug.LogError("[VPad] 初期化エラー");
+                Debug.LogError("failed Initialized()");
                 return;
             }
 
-			stickTransform.position = baseTransform.position;
-            execute = false;
+			this.stickTransform.position = this.baseTransform.position;
+            this.isExecuted = false;
         }
     
         /// <summary>
@@ -107,12 +89,17 @@ namespace TGS.Presenter.Input
         {
             if (!this.isInitialized)
             {
-                Debug.LogError("[VPad] 初期化エラー");
+                Debug.LogError("failed Initialized()");
                 return;
             }
             
-            if(stickTransform.rect.Contains((Vector3)eventData.pressPosition - stickTransform.position))
-                execute = true;
+            this.currentCamera = (this.currentCamera == null) ? eventData.enterEventCamera : this.currentCamera;
+            
+            // stickImageをタッチしている時のみ実行するように設定
+            if(this.stickTransform.rect.Contains((Vector3)eventData.pressPosition - this.stickTransform.position))
+            {
+                this.isExecuted = true;
+            }
         }
     
         /// <summary>
@@ -121,35 +108,35 @@ namespace TGS.Presenter.Input
         /// <returns>Vector2(Axis.Horizontal, Axis.Vertical)</returns>
         public Vector2 GetVector()
         {
-			Vector2 stickPos = stickTransform.position;
-			Vector2 basePos = baseTransform.position;
-			Vector2 difference = stickPos - basePos;
+			Vector2 difference = this.stickTransform.position - this.baseTransform.position;
+            Vector2 axises;
 
-            float distance = Vector2.Distance(stickPos, basePos);
+            axises.x = Mathf.Clamp(difference.x * this.axisReflectionRate, -1.0f, 1.0f);
+            axises.y = Mathf.Clamp(difference.y * this.axisReflectionRate, -1.0f, 1.0f);
 
-			return difference.normalized * (distance / baseRadius);
+            return axises;
         }
-    
-	    /// <summary>
-        /// 非表示にする
-        /// </summary>
-        public void Hide()
-        {
-            this.baseImage.gameObject.SetActive(false);
-            this.stickImage.gameObject.SetActive(false);
 
-			isShow = false;
+        /// <summary>
+        /// 現在入力されているポインターのワールド座標を返します。
+        /// </summary>
+        /// <param name="eventData">EventSystems.PointerEventData</param>
+		/// <return>Vector3.WorldPoint</return>
+        private Vector3 GetPointerWorldPoint(PointerEventData eventData)
+        {
+            Vector3 pointerPosition = Vector3.zero;
+            RectTransformUtility.ScreenPointToWorldPointInRectangle(this.stickTransform, eventData.position, this.currentCamera, out pointerPosition);
+            return pointerPosition;
         }
-    
-	    /// <summary>
-        /// 表示する
-        /// </summary>
-        public void Show()
-        {
-            this.baseImage.gameObject.SetActive(true);
-            this.stickImage.gameObject.SetActive(true);
 
-			isShow = true;
+        /// <summary>
+        /// [Debug Only] エラーを出力する
+        /// </summary>
+        private void NotifyError(string errorMessage)
+        {
+            #if UNITY_EDITOR
+            UnityEngine.Debug.LogError($"[Virtual Pad Exception Error] {errorMessage}");
+            #endif
         }
     }
 }
