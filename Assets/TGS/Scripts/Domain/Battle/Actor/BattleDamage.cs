@@ -6,30 +6,64 @@ namespace TGS.Domain.Battle.Actor
     /// <summary>
     /// ダメージ処理のインターフェース
     /// </summary>
-    public interface IBattleDamage
+
+    public interface IBattleActorDamage
     {
         /// <summary>
         /// ユニークID
         /// </summary>
         /// <value></value>
-        string Guid { get; set; }
+        IBattleActor Actor { get; }
 
         /// <summary>
         /// ゲームオブジェクト
         /// </summary>
         /// <value></value>
         GameObject gameObject { get; }
-        
+
         /// <summary>
-        /// 初期化
+        /// ダメージ処理
         /// </summary>
-        void Initialize();
+        void AddDamage();
     }
 
 
+    public class BattleActorDamage : MonoBehaviour, IBattleActorDamage
+    {
+        // 各種変数
+         private BattleActor.IBattleActor actor = null;
+         public IBattleActor Actor => this.actor;
+            
+         // DI
+         public BattleActorDamage(IBattleActor actor)
+         {
+              this.actor = actor;
+         }
+            
 
-    
-    /// <summary>
-    /// ダメージ処理
-    /// </summary>
+        /// <summary> 
+        /// ユニークID
+        /// </summary>
+        /// <value></value>
+        public IBattleActor { get;}
+
+        /// <summary>
+        /// ゲームオブジェクト
+        /// </summary>
+        /// <value></value>
+        public GameObject gameObject { get { return this.gameObject; } }
+
+        /// <summary>
+        /// ダメージ処理
+        /// </summary>
+        public void AddDamage()
+        {
+            hitPoint-=1;
+            if (hitPoint <= 0)
+            {
+                BattleActor.set{deathFlag = true;}
+            }
+
+        }
+    }
 }
