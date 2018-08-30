@@ -30,8 +30,8 @@ namespace TGS.Presenter.Input
             this.stickImage.raycastTarget = false;
 
             // RectTransformを割り当てる
-			this.baseTransform = this.baseImage.rectTransform;
-			this.stickTransform = this.stickImage.rectTransform;
+            this.baseTransform = this.baseImage.rectTransform;
+            this.stickTransform = this.stickImage.rectTransform;
 
             this.axisReflectionRate = 1.0f / this.baseRadius;
             
@@ -50,21 +50,21 @@ namespace TGS.Presenter.Input
             }
 
             // stickImageをタッチしていなければ実行しない
-			if(!this.isExecuted)
+            if(!this.isExecuted)
             {
 			    return;
             }
 
-			this.stickTransform.position = (Vector2)this.baseTransform.position + eventData.position - eventData.pressPosition;
+            this.stickTransform.position = (Vector2)this.baseTransform.position + eventData.position - eventData.pressPosition;
 
             float distance = Mathf.Pow(this.stickTransform.position.x - this.baseTransform.position.x, 2) + Mathf.Pow(this.stickTransform.position.y - this.baseTransform.position.y, 2);
 
-			if (distance >= Mathf.Pow(this.baseRadius, 2))
-			{
-				Vector3 tmp = eventData.position - eventData.pressPosition;
+            if (distance >= Mathf.Pow(this.baseRadius, 2))
+            {
+                Vector3 tmp = eventData.position - eventData.pressPosition;
 
-				this.stickTransform.position = this.baseTransform.position + tmp.normalized * this.baseRadius;
-			}
+                this.stickTransform.position = this.baseTransform.position + tmp.normalized * this.baseRadius;
+            }
         }
     
         /// <summary>
@@ -78,7 +78,7 @@ namespace TGS.Presenter.Input
                 return;
             }
 
-			this.stickTransform.position = this.baseTransform.position;
+            this.stickTransform.position = this.baseTransform.position;
             this.isExecuted = false;
         }
     
@@ -108,7 +108,7 @@ namespace TGS.Presenter.Input
         /// <returns>Vector2(Axis.Horizontal, Axis.Vertical)</returns>
         public Vector2 GetVector()
         {
-			Vector2 difference = this.stickTransform.position - this.baseTransform.position;
+            Vector2 difference = this.stickTransform.position - this.baseTransform.position;
             Vector2 axises;
 
             axises.x = Mathf.Clamp(difference.x * this.axisReflectionRate, -1.0f, 1.0f);
