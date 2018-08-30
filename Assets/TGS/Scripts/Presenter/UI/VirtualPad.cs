@@ -12,32 +12,32 @@ namespace TGS.Presenter.Input
         private Image stickImage;
         [SerializeField]
         private float baseRadius = 50.0f;
-    
+
         private Camera currentCamera = null;
-    
+
         private RectTransform baseTransform;
         private RectTransform stickTransform;
 
         private float axisReflectionRate;
-        
+
         private bool isInitialized = false;
         private bool isExecuted = false;
-        
+
         private void Awake()
         {
-            // レイキャストに干渉しないように変更
-            this.baseImage.raycastTarget = false;
-            this.stickImage.raycastTarget = false;
+             // レイキャストに干渉しないように変更
+             this.baseImage.raycastTarget = false;
+             this.stickImage.raycastTarget = false;
 
-            // RectTransformを割り当てる
-            this.baseTransform = this.baseImage.rectTransform;
-            this.stickTransform = this.stickImage.rectTransform;
+             // RectTransformを割り当てる
+             this.baseTransform = this.baseImage.rectTransform;
+             this.stickTransform = this.stickImage.rectTransform;
 
-            this.axisReflectionRate = 1.0f / this.baseRadius;
-            
-            this.isInitialized = true;
+             this.axisReflectionRate = 1.0f / this.baseRadius;
+
+             this.isInitialized = true;
         }
-    
+
         /// <summary>
         /// ドラッグ時処理
         /// </summary>
@@ -45,14 +45,14 @@ namespace TGS.Presenter.Input
         {
             if (!this.isInitialized)
             {
-                Debug.LogError("failed Initialized()");
+                this.NotifyError("failed Initialized()");
                 return;
             }
 
             // stickImageをタッチしていなければ実行しない
             if(!this.isExecuted)
             {
-			    return;
+                return;
             }
 
             this.stickTransform.position = (Vector2)this.baseTransform.position + eventData.position - eventData.pressPosition;
@@ -66,7 +66,7 @@ namespace TGS.Presenter.Input
                 this.stickTransform.position = this.baseTransform.position + tmp.normalized * this.baseRadius;
             }
         }
-    
+
         /// <summary>
         /// 画面から指が離れたら
         /// </summary>
@@ -74,14 +74,14 @@ namespace TGS.Presenter.Input
         {
             if (!this.isInitialized)
             {
-                Debug.LogError("failed Initialized()");
+                this.NotifyError("failed Initialized()");
                 return;
             }
 
             this.stickTransform.position = this.baseTransform.position;
             this.isExecuted = false;
         }
-    
+
         /// <summary>
         /// 画面に指が触れたら
         /// </summary>
@@ -89,19 +89,19 @@ namespace TGS.Presenter.Input
         {
             if (!this.isInitialized)
             {
-                Debug.LogError("failed Initialized()");
+                this.NotifyError("failed Initialized()");
                 return;
             }
-            
+
             this.currentCamera = (this.currentCamera == null) ? eventData.enterEventCamera : this.currentCamera;
-            
+
             // stickImageをタッチしている時のみ実行するように設定
             if(this.stickTransform.rect.Contains((Vector3)eventData.pressPosition - this.stickTransform.position))
             {
                 this.isExecuted = true;
             }
         }
-    
+
         /// <summary>
         /// Get Virtual Axises Vector
         /// </summary>
@@ -121,7 +121,7 @@ namespace TGS.Presenter.Input
         /// 現在入力されているポインターのワールド座標を返します。
         /// </summary>
         /// <param name="eventData">EventSystems.PointerEventData</param>
-		/// <return>Vector3.WorldPoint</return>
+        /// <return>Vector3.WorldPoint</return>
         private Vector3 GetPointerWorldPoint(PointerEventData eventData)
         {
             Vector3 pointerPosition = Vector3.zero;
