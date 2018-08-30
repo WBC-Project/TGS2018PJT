@@ -109,7 +109,7 @@ namespace TGS.Presenter.Input
         public Vector2 GetVector()
         {
             Vector2 difference = this.stickTransform.position - this.baseTransform.position;
-            Vector2 axises;
+            Vector2 axises = Vector2.zero;
 
             axises.x = Mathf.Clamp(difference.x * this.axisReflectionRate, -1.0f, 1.0f);
             axises.y = Mathf.Clamp(difference.y * this.axisReflectionRate, -1.0f, 1.0f);
