@@ -2,11 +2,9 @@
 
 namespace TGS.Domain.Battle.Actor
 {
-
     /// <summary>
     /// ダメージ処理のインターフェース
     /// </summary>
-
     public interface IBattleActorDamage
     {
         /// <summary>
@@ -30,11 +28,20 @@ namespace TGS.Domain.Battle.Actor
 
     public class BattleActorDamage : MonoBehaviour, IBattleActorDamage
     {
+        //定義
+        Actor actor = new Actor();
+
         // 各種変数
-         private BattleActor.IBattleActor actor = null;
+         private IBattleActor actor = null;
+         public Gameobject gameobject { get { return this.actor.gameobject; } }
+
+         // 受け取った変数をラップする処理をリテラル化
          public IBattleActor Actor => this.actor;
             
-         // DI
+         /// <summary>
+         /// 初期化処理としての依存性の注入
+         /// </summary>
+         /// <param name="actor"></param>
          public BattleActorDamage(IBattleActor actor)
          {
               this.actor = actor;
@@ -56,12 +63,15 @@ namespace TGS.Domain.Battle.Actor
         /// <summary>
         /// ダメージ処理
         /// </summary>
-        public void AddDamage()
+        public void AddDamage(int additionalPoint)
         {
-            hitPoint-=1;
-            if (hitPoint <= 0)
+            int currentHitPoint = this.actor.hitPoint;
+            currentHitPoint -= additionalPoint;
+            this.actor.ChangeHitPoint(currentHitPoint);
+
+            if (HitPoint <= 0)
             {
-                BattleActor.set{deathFlag = true;}
+                BattleActor.set{DeathFlag = true;}
             }
 
         }

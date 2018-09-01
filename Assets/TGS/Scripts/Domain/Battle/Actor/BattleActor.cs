@@ -23,19 +23,20 @@ namespace TGS.Domain.Battle.Actor
         /// ヒットポイント
         /// </summary>
         /// <value></value>
-        int hitPoint { get; }
+        int HitPoint { get; }
 
         /// <summary>
         /// ダメージ処理
         /// </summary>
         void AddDamage();
+        int ChangeHitPoint(int fixedHitPoint);
 
 
         /// <summary>
         /// 死亡判定
         /// </summary>
         /// <value></value>
-        bool deathFlag{ get; }
+        bool DeathFlag{ get; }
 
 
         /// <summary>
@@ -43,7 +44,6 @@ namespace TGS.Domain.Battle.Actor
         /// </summary>
         void Initialize();
     }
-
 
     /// <summary>
     /// アクターコンポーネント
@@ -55,7 +55,7 @@ namespace TGS.Domain.Battle.Actor
         /// </summary>
         /// <value></value>
         public string Guid { get; set; }
- b 
+
         /// <summary>
         /// ゲームオブジェクト
         /// </summary>
@@ -66,19 +66,28 @@ namespace TGS.Domain.Battle.Actor
         /// ヒットポイント
         /// </summary>
         /// <value></value>
-        public int hitPoint { get; set;}
-
+        public int HitPoint { get; set;}
+        
         /// <summary>
         /// ダメージ処理
         /// </summary>
-
+        /// <param name="fixedHitPoint"></param>
+        /// <returns></returns>
+        
+        public void AddDamage()
+        {
+            
+        }
+        public int ChangeHitPoint(int fixedHitPoint)
+        {
+            this.HitPoint = fixedHitPoint;
+        }
 
         /// <summary>
         /// 死亡判定
         /// </summary>
         /// <value></value>
-
-        public bool deathFlag {get;}
+        public bool DeathFlag {get;}
 
         /// <summary>
         /// 初期化
