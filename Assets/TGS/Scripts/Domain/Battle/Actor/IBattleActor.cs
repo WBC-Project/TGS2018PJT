@@ -20,6 +20,22 @@ namespace TGS.Domain.Battle.Actor
         GameObject gameObject { get; }
         
         /// <summary>
+        /// ヒットポイント
+        /// </summary>
+        /// <value></value>
+        int HitPoint { get; }
+
+        int ChangeHitPoint(int fixedHitPoint);
+
+
+        /// <summary>
+        /// 死亡判定
+        /// </summary>
+        /// <value></value>
+        bool DeathFlag{ get; }
+
+
+        /// <summary>
         /// 初期化
         /// </summary>
         void Initialize();
@@ -41,6 +57,28 @@ namespace TGS.Domain.Battle.Actor
         /// </summary>
         /// <value></value>
         public GameObject gameObject { get { return this.gameObject; } }
+
+        /// <summary>
+        /// ヒットポイント
+        /// </summary>
+        /// <value></value>
+        public int HitPoint { get; set;}
+        
+        /// <summary>
+        /// ヒットポイントの反映
+        /// </summary>
+        /// <param name="fixedHitPoint"></param>
+        /// <returns></returns>
+        public int ChangeHitPoint(int fixedHitPoint)
+        {
+            this.HitPoint = fixedHitPoint;
+        }
+
+        /// <summary>
+        /// 死亡判定
+        /// </summary>
+        /// <value></value>
+        public bool DeathFlag {get;}
 
         /// <summary>
         /// 初期化
