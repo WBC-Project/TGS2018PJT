@@ -25,10 +25,6 @@ namespace TGS.Domain.Battle.Actor
         /// <value></value>
         int HitPoint { get; }
 
-        /// <summary>
-        /// ダメージ処理
-        /// </summary>
-        void AddDamage();
         int ChangeHitPoint(int fixedHitPoint);
 
 
@@ -69,15 +65,10 @@ namespace TGS.Domain.Battle.Actor
         public int HitPoint { get; set;}
         
         /// <summary>
-        /// ダメージ処理
+        /// ヒットポイントの反映
         /// </summary>
         /// <param name="fixedHitPoint"></param>
         /// <returns></returns>
-        
-        public void AddDamage()
-        {
-            
-        }
         public int ChangeHitPoint(int fixedHitPoint)
         {
             this.HitPoint = fixedHitPoint;

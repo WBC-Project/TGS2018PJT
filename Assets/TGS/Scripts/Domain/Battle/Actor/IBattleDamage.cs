@@ -24,16 +24,13 @@ namespace TGS.Domain.Battle.Actor
         /// </summary>
         void AddDamage();
     }
-
-
-    public class BattleActorDamage : MonoBehaviour, IBattleActorDamage
+    
+        public class BattleActorDamage : MonoBehaviour, IBattleActorDamage
     {
-        //定義
-        Actor actor = new Actor();
-
         // 各種変数
          private IBattleActor actor = null;
-         public Gameobject gameobject { get { return this.actor.gameobject; } }
+
+         public GameObject gameObject { get { return this.actor.gameObject; } }
 
          // 受け取った変数をラップする処理をリテラル化
          public IBattleActor Actor => this.actor;
@@ -46,7 +43,6 @@ namespace TGS.Domain.Battle.Actor
          {
               this.actor = actor;
          }
-            
 
         /// <summary> 
         /// ユニークID
