@@ -25,7 +25,7 @@ namespace TGS.Domain.Battle.Actor
         /// <value></value>
         int HitPoint { get; }
 
-        int ChangeHitPoint(int fixedHitPoint);
+        void ChangeHitPoint(int fixedHitPoint);
 
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace TGS.Domain.Battle.Actor
         /// </summary>
         /// <param name="fixedHitPoint"></param>
         /// <returns></returns>
-        public int ChangeHitPoint(int fixedHitPoint)
+        public void ChangeHitPoint(int fixedHitPoint)
         {
             this.HitPoint = fixedHitPoint;
         }
