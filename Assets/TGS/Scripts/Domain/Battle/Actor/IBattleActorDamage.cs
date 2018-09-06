@@ -22,7 +22,7 @@ namespace TGS.Domain.Battle.Actor
         /// <summary>
         /// ダメージ処理
         /// </summary>
-        void AddDamage(int);
+        void AddDamage(int additionalPoint);
     }
     
         public class BattleActorDamage : MonoBehaviour, IBattleActorDamage
@@ -65,7 +65,7 @@ namespace TGS.Domain.Battle.Actor
 
             if (IBattleActor.HitPoint <= 0)
             {
-                IBattleActor.set{IBattleActor.DeathFlag = true;}
+                IBattleActor.DeathFlag = true;
             }
 
         }
