@@ -72,6 +72,7 @@ namespace TGS.Domain.Battle.Actor
         public int ChangeHitPoint(int fixedHitPoint)
         {
             this.HitPoint = fixedHitPoint;
+            return 0;
         }
 
         /// <summary>
