@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-namespace TGS.Presenter.Input
+namespace TGS.Presenter.UI
 {
     public class VirtualPad : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
     {    
@@ -55,16 +55,16 @@ namespace TGS.Presenter.Input
                 return;
             }
 
-            this.stickTransform.position = (Vector2)this.baseTransform.position + eventData.position - eventData.pressPosition;
+            Vector2 difference = eventData.position - eventData.pressPosition;
 
-            float distance = Mathf.Pow(this.stickTransform.position.x - this.baseTransform.position.x, 2) + Mathf.Pow(this.stickTransform.position.y - this.baseTransform.position.y, 2);
+            Vector3 newPosition = this.baseTransform.position + (Vector3)difference;
 
-            if (distance >= Mathf.Pow(this.baseRadius, 2))
+            if (difference.sqrMagnitude >= Mathf.Pow(this.baseRadius, 2))
             {
-                Vector3 tmp = eventData.position - eventData.pressPosition;
-
-                this.stickTransform.position = this.baseTransform.position + tmp.normalized * this.baseRadius;
+                newPosition = this.baseTransform.position + (Vector3)difference.normalized * this.baseRadius;
             }
+
+            this.stickTransform.position = newPosition;
         }
 
         /// <summary>
@@ -96,10 +96,7 @@ namespace TGS.Presenter.Input
             this.currentCamera = (this.currentCamera == null) ? eventData.enterEventCamera : this.currentCamera;
 
             // stickImageをタッチしている時のみ実行するように設定
-            if(this.stickTransform.rect.Contains((Vector3)eventData.pressPosition - this.stickTransform.position))
-            {
-                this.isExecuted = true;
-            }
+            this.isExecuted = this.stickTransform.rect.Contains((Vector3)eventData.pressPosition - this.stickTransform.position);
         }
 
         /// <summary>
