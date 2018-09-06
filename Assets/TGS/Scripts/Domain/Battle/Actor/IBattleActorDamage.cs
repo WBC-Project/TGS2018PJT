@@ -22,15 +22,13 @@ namespace TGS.Domain.Battle.Actor
         /// <summary>
         /// ダメージ処理
         /// </summary>
-        void AddDamage();
+        void AddDamage(int additionalPoint);
     }
     
         public class BattleActorDamage : MonoBehaviour, IBattleActorDamage
     {
         // 各種変数
          private IBattleActor actor = null;
-
-         public GameObject gameObject { get { return this.actor.gameObject; } }
 
          // 受け取った変数をラップする処理をリテラル化
          public IBattleActor Actor => this.actor;
@@ -65,9 +63,9 @@ namespace TGS.Domain.Battle.Actor
             currentHitPoint -= additionalPoint;
             this.actor.ChangeHitPoint(currentHitPoint);
 
-            if (HitPoint <= 0)
+            if (IBattleActor.HitPoint <= 0)
             {
-                BattleActor.set{DeathFlag = true;}
+                IBattleActor.DeathFlag = true;
             }
 
         }

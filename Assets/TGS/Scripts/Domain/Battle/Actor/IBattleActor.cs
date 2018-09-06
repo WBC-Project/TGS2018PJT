@@ -32,7 +32,7 @@ namespace TGS.Domain.Battle.Actor
         /// 死亡判定
         /// </summary>
         /// <value></value>
-        bool DeathFlag{ get; }
+        bool DeathFlag{ get; set; }
 
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace TGS.Domain.Battle.Actor
         /// 死亡判定
         /// </summary>
         /// <value></value>
-        public bool DeathFlag {get;}
+        public bool DeathFlag {get; set; }
 
         /// <summary>
         /// 初期化
