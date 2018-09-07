@@ -8,7 +8,7 @@ namespace TGS.Domain.Battle.Actor
     public interface IBattleActorDamage
     {
         /// <summary>
-        /// ユニークID
+        /// アクターの取得
         /// </summary>
         /// <value></value>
         IBattleActor Actor { get; }
@@ -29,9 +29,6 @@ namespace TGS.Domain.Battle.Actor
     {
         // 各種変数
          private IBattleActor actor = null;
-
-         // 受け取った変数をラップする処理をリテラル化
-         //public IBattleActor Actor => this.actor;
             
          /// <summary>
          /// 初期化処理としての依存性の注入
@@ -39,7 +36,7 @@ namespace TGS.Domain.Battle.Actor
          /// <param name="actor"></param>
          public BattleActorDamage(IBattleActor actor)
          {
-              this.actor = actor;
+             this.actor = actor;
          }
 
         /// <summary> 
