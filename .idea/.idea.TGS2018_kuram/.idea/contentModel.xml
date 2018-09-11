@@ -21,9 +21,15 @@
                   <e p="IBattleMainLoop.cs" t="Include" />
                 </e>
               </e>
+              <e p="Menu" t="Include">
+                <e p="DebugMenu" t="Include">
+                  <e p="DebugMenu.cs" t="Include" />
+                </e>
+              </e>
             </e>
             <e p="Presenter" t="Include">
               <e p="UI" t="Include">
+                <e p="ButtonManager.cs" t="Include" />
                 <e p="VirtualPad.cs" t="Include" />
               </e>
             </e>
