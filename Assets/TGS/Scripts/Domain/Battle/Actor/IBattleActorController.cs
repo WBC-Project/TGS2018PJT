@@ -21,7 +21,7 @@ namespace TGS.Domain.Battle.Actor
         void Move();
     }
 
-    public class BattleActorController : MonoBehaviour, IBattleActorController
+    public class BattleActorController : IBattleActorController
     {
         /// <summary>
         /// バーチャルパッド
