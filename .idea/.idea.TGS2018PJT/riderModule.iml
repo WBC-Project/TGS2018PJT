@@ -5,7 +5,6 @@
     <content url="file://$APPLICATION_CONFIG_DIR$/extensions" />
     <content url="file://$MODULE_DIR$/../.." />
     <content url="file:///app" />
-    <content url="file:///f5f19efe" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
