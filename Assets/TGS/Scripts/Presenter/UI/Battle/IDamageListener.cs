@@ -3,65 +3,32 @@ using UnityEngine;
 
 namespace TGS.Presenter.UI.Battle
 {
-    public class BattleHitDamageListener
+    public interface IDamageListener
     {
-        private static List<GameObject> UIDatas = new List<GameObject>();
-
-        private static bool initialize = false;
-
         /// <summary>
-        /// UIの画像データ
+        /// 削除するべきか
         /// </summary>
-        public static Sprite[] sprites { get; private set; }
-
-        private static void Initialize()
-        {
-            sprites = Resources.LoadAll<Sprite>("Sprites/UI/NumberFont");
-
-            initialize = true;
-        }
-
+        bool Destroy { get; }
+        
         /// <summary>
-        /// ダメージ描画の開始
+        /// 各値の設定
         /// </summary>
         /// <param name="damage">ダメージ値</param>
         /// <param name="position">出現させる座標</param>
         /// <param name="color">色</param>
-        public static void Play(uint damage, Vector3 position, Color color)
-        {
-            if (!initialize)
-            {
-                Initialize();
-            }
-
-            UIDatas.Add(new GameObject("Damage_" + damage, typeof(DamageListener)));
-            UIDatas[UIDatas.Count - 1].GetComponent<DamageListener>().SetDamageUI(damage, position, color);
-        }
+        /// <param name="battleHitDamageListener">BattleHitDamageListener</param>
+        void SetDamageUI(uint damage, Vector3 position, Color color, IBattleHitDamageListener battleHitDamageListener);
 
         /// <summary>
         /// 更新処理
         /// </summary>
-        public static void Update()
-        {
-            for (int i = 0; i < UIDatas.Count; i++)
-            {
-                DamageListener damageListener = UIDatas[i].GetComponent<DamageListener>();
-
-                damageListener.DamageUIUpdate();
-
-                if (damageListener.Destroy)
-                {
-                    GameObject.Destroy(UIDatas[i]);
-                    UIDatas.RemoveAt(i);
-                }
-            }
-        }
+        void DamageUIUpdate();
     }
 
     /// <summary>
     /// 文字を描画する為のGameObject
     /// </summary>
-    public class DamageListener : MonoBehaviour
+    public class DamageListener : MonoBehaviour, IDamageListener
     {
         private uint damageValue;
 
@@ -69,6 +36,8 @@ namespace TGS.Presenter.UI.Battle
         private Color spriteColor;
 
         private List<GameObject> spriteObjects = new List<GameObject>();
+
+        private IBattleHitDamageListener battleHitDamageListener;
 
         /// <summary>
         /// 削除するべきか
@@ -81,11 +50,13 @@ namespace TGS.Presenter.UI.Battle
         /// <param name="damage">ダメージ値</param>
         /// <param name="position">出現させる座標</param>
         /// <param name="color">色</param>
-        public void SetDamageUI(uint damage, Vector3 position, Color color)
+        /// <param name="battleHitDamageListener">BattleHitDamageListener</param>
+        public void SetDamageUI(uint damage, Vector3 position, Color color, IBattleHitDamageListener battleHitDamageListener)
         {
             this.damageValue = damage;
             this.transform.position = position;
             this.spriteColor = color;
+            this.battleHitDamageListener = battleHitDamageListener;
         }
 
         private void Start()
@@ -98,14 +69,14 @@ namespace TGS.Presenter.UI.Battle
                 byte number = (byte) (damageValue.ToString()[i] - '0');
 
                 //文字の生成と設定
-                this.spriteObjects.Add(new GameObject(string.Format("{0}_{1}", i, number), typeof(SpriteRenderer)));
+                this.spriteObjects.Add(new GameObject($"{i}_{number}", typeof(SpriteRenderer)));
                 this.spriteObjects[i].layer = 5;
                 this.spriteObjects[i].transform.parent = this.transform;
                 
                 //SpriteRendererの設定
                 SpriteRenderer image = this.spriteObjects[i].GetComponent<SpriteRenderer>();
                 
-                image.sprite = BattleHitDamageListener.sprites[number];
+                image.sprite = battleHitDamageListener.sprites[number];
                 image.color = this.spriteColor;
 
                 this.spriteObjects[i].transform.localPosition = new Vector3(i - (digitCount / 2.0f) + 0.5f, 0.0f);
