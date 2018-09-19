@@ -23,7 +23,11 @@
               </e>
               <e p="Menu" t="Include">
                 <e p="DebugMenu" t="Include">
-                  <e p="DebugMenu.cs" t="Include" />
+                  <e p="DbgButton.cs" t="Include" />
+                  <e p="DebugMenuMng.cs" t="Include" />
+                  <e p="ExitButton.cs" t="Include" />
+                  <e p="InstDbgBtn.cs" t="Include" />
+                  <e p="InstDbgMenul.cs" t="Include" />
                 </e>
               </e>
             </e>
