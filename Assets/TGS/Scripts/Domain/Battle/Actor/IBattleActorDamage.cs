@@ -46,7 +46,7 @@ namespace TGS.Domain.Battle.Actor
         /// ユニークID
         /// </summary>
         /// <value></value>
-        public IBattleActor { get;}
+        public IBattleActor actor { get; }
 
         /// <summary>
         /// ゲームオブジェクト
