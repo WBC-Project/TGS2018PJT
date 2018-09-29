@@ -5,7 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/TGS/Scenes/MainMenu.unity
+    guid: b96647f9702bb804f90ca1d3e223cf92
+  - enabled: 1
+    path: Assets/TGS/Scenes/Battle.unity
+    guid: 49485be4d716d4bc88ff13ab8bd83506
+  - enabled: 1
+    path: Assets/TGS/Scenes/Edit.unity
+    guid: c0c2960c8ecb584459f96db8127b0724
+  - enabled: 1
+    path: Assets/TGS/Scenes/Option.unity
+    guid: 4eff874969f6eec45a57093b3dcf4a3e
+  - enabled: 1
+    path: Assets/TGS/Scenes/Result.unity
+    guid: 9cb5da9251a14bc49a8479fe2953098c
+  - enabled: 1
+    path: Assets/TGS/Scenes/BattleSetting.unity
+    guid: 527f03e202fb25b4ab2181dccf7a635a
   m_configObjects: {}

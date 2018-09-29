@@ -8,7 +8,7 @@ namespace TGS.Domain.Battle.Actor
     public interface IBattleActorDamage
     {
         /// <summary>
-        /// ユニークID
+        /// アクターの取得
         /// </summary>
         /// <value></value>
         IBattleActor Actor { get; }
@@ -29,9 +29,6 @@ namespace TGS.Domain.Battle.Actor
     {
         // 各種変数
          private IBattleActor actor = null;
-
-         // 受け取った変数をラップする処理をリテラル化
-         public IBattleActor Actor => this.actor;
             
          /// <summary>
          /// 初期化処理としての依存性の注入
@@ -39,14 +36,18 @@ namespace TGS.Domain.Battle.Actor
          /// <param name="actor"></param>
          public BattleActorDamage(IBattleActor actor)
          {
-              this.actor = actor;
+             this.actor = actor;
          }
 
         /// <summary> 
         /// ユニークID
         /// </summary>
         /// <value></value>
+<<<<<<< HEAD
         public IBattleActor actor { get; }
+=======
+        public IBattleActor Actor { get { return actor; } }
+>>>>>>> e5915ffe7feeccf26b6f040d79fb05393c3583f2
 
         /// <summary>
         /// ゲームオブジェクト
@@ -59,13 +60,13 @@ namespace TGS.Domain.Battle.Actor
         /// </summary>
         public void AddDamage(int additionalPoint)
         {
-            int currentHitPoint = this.actor.hitPoint;
+            int currentHitPoint = this.actor.HitPoint;
             currentHitPoint -= additionalPoint;
             this.actor.ChangeHitPoint(currentHitPoint);
 
-            if (IBattleActor.HitPoint <= 0)
+            if (this.actor.HitPoint <= 0)
             {
-                IBattleActor.DeathFlag = true;
+                this.actor.DeathFlag = true;
             }
 
         }
