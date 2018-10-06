@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58a79a7c-5483-4d5a-bf25-b7ef6144fcd5" name="Default" comment="metaとか" />
+    <list default="true" id="58a79a7c-5483-4d5a-bf25-b7ef6144fcd5" name="Default" comment="metaとか">
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/BattleSetting.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/Edit.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/Edit.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/MainMenu.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/Option.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/Result.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/Result.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Manager/SingletonMonoBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Manager/SingletonMonoBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/ButtonManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/NumberFont.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/NumberFont.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGS2018PJT/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGS2018PJT/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGS2018PJT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGS2018PJT/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGS2018_kuram/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGS2018_kuram/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGS2018_kuram/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGS2018_kuram/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/DDLs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Manager.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/DDLs/.keep" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presentation/.keep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Dlls.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/BattleSetting.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Dlls/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scenes/Battle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/Battle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Battle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Battle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Battle/Factory/BattleCharacterFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Battle/Factory/BattleCharacterFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Data/Battle.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Data/Battle.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Presentation.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presentation.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/Option.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/ButtonManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/ButtonManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VSCode.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scenes/MainMenu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VSCode/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VSCode/Editor/VSCode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VSCode/Editor/VSCode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VSCode/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VSCode/LICENSE.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +72,89 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1872141883">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="1529" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="1529" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/VirtualPad.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <folding>
+                <marker date="1536325688101" expanded="false" signature="6:72" ph="..." />
+                <marker date="1536325688101" expanded="true" signature="100:4358" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="200:4356" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="691:1120" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="1130:1186" ph="/// ドラッグ時処理 ... " />
+                <marker date="1536325688101" expanded="true" signature="1241:1972" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="1288:1398" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="1474:1526" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="1767:1905" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="1982:2041" ph="/// 画面から指が離れたら ... " />
+                <marker date="1536325688101" expanded="true" signature="2101:2378" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="2148:2258" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="2388:2446" ph="/// 画面に指が触れたら ... " />
+                <marker date="1536325688101" expanded="true" signature="2508:2966" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="2555:2665" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="2976:3121" ph="/// Get Virtual Axises Vector ... " />
+                <marker date="1536325688101" expanded="true" signature="3156:3519" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="3529:3727" ph="/// 現在入力されているポインターのワールド座標を返します。 ... " />
+                <marker date="1536325688101" expanded="true" signature="3800:4059" ph="{...}" />
+                <marker date="1536325688101" expanded="true" signature="4069:4139" ph="/// [Debug Only] エラーを出力する ... " />
+                <marker date="1536325688101" expanded="true" signature="4193:4350" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="848">
+              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+              <folding>
+                <marker date="1538100425736" expanded="true" signature="60:116" ph="/// ダメージ処理のインターフェース ... " />
+                <marker date="1538100425736" expanded="true" signature="156:197" ph="{...}" />
+                <marker date="1538100425736" expanded="true" signature="171:197" ph="/// ユニークID ... " />
+                <marker date="1538100425736" expanded="true" signature="1729:1765" ph="{...}" />
+                <marker date="1538100425736" expanded="true" signature="1729:1776" ph="{...}" />
+                <marker date="1538100425736" expanded="true" signature="1729:1782" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -42,6 +163,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Application/Battle/Factory/BattleCharacterFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/VirtualPad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Data/Battle/Actor/BattleCharacterDefinition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,6 +179,11 @@
         <option value="$PROJECT_DIR$/Assets/TGS/Plugins/SQride/Domain/MysqlConstruct.cs" />
         <option value="$PROJECT_DIR$/Assets/TGS/Plugins/SQride/System/SQrideMapable.cs" />
         <option value="$PROJECT_DIR$/Assets/TGS/Plugins/SQride/Component/DataBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Battle/BattleCharacterFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/BattleActorDefinition.cs" />
+        <option value="$PROJECT_DIR$/Assets/TGS/Scripts/Data/Battle/Actor/BattleCharacterDefinition.cs" />
+        <option value="$PROJECT_DIR$/Assets/TGS/Scripts/Application/Battle/Factory/BattleCharacterFactory.cs" />
       </list>
     </option>
   </component>
@@ -73,10 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -84,11 +212,98 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Application" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Application" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Application" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+              <item name="Factory" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Data" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Data" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Data" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+              <item name="Actor" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Domain" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Domain" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Domain" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+              <item name="Actor" type="1045f7f1:UnityExplorerNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,6 +352,8 @@
       <workItem from="1534418008567" duration="4822000" />
       <workItem from="1535268424243" duration="413000" />
       <workItem from="1535332395862" duration="621000" />
+      <workItem from="1538098471311" duration="1753000" />
+      <workItem from="1538208773308" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="metaとか">
       <created>1534418498065</created>
@@ -156,7 +373,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5940000" />
+    <option name="totallyTimeSpent" value="7950000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -168,9 +385,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29154077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -185,7 +403,7 @@
       <window_info anchor="bottom" id="Unity" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32808024" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32771084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -195,29 +413,29 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" order="0" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32969698" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32848486" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="14" weight="0.32969698" />
-      <window_info anchor="right" id="Errors In Solution" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28700906" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32771084" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +496,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/BattleActorDefinition.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Data/Battle/Actor/BattleCharacterDefinition.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Application/Battle/Factory/BattleCharacterFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/VirtualPad.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <marker date="1536325688101" expanded="false" signature="6:72" ph="..." />
+            <marker date="1536325688101" expanded="true" signature="200:4356" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="691:1120" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="1130:1186" ph="/// ドラッグ時処理 ... " />
+            <marker date="1536325688101" expanded="true" signature="1241:1972" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="1288:1398" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="1474:1526" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="1767:1905" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="1982:2041" ph="/// 画面から指が離れたら ... " />
+            <marker date="1536325688101" expanded="true" signature="2101:2378" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="2148:2258" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="2388:2446" ph="/// 画面に指が触れたら ... " />
+            <marker date="1536325688101" expanded="true" signature="2508:2966" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="2555:2665" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="2976:3121" ph="/// Get Virtual Axises Vector ... " />
+            <marker date="1536325688101" expanded="true" signature="3156:3519" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="3529:3727" ph="/// 現在入力されているポインターのワールド座標を返します。 ... " />
+            <marker date="1536325688101" expanded="true" signature="3800:4059" ph="{...}" />
+            <marker date="1536325688101" expanded="true" signature="4069:4139" ph="/// [Debug Only] エラーを出力する ... " />
+            <marker date="1536325688101" expanded="true" signature="4193:4350" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding>
+            <marker date="1538100425736" expanded="true" signature="60:116" ph="/// ダメージ処理のインターフェース ... " />
+            <marker date="1538100425736" expanded="true" signature="156:197" ph="{...}" />
+            <marker date="1538100425736" expanded="true" signature="171:197" ph="/// ユニークID ... " />
+            <marker date="1538100425736" expanded="true" signature="1729:1765" ph="{...}" />
+            <marker date="1538100425736" expanded="true" signature="1729:1776" ph="{...}" />
+            <marker date="1538100425736" expanded="true" signature="1729:1782" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
