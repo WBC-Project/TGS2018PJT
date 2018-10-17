@@ -17,7 +17,12 @@ namespace TGS.Domain.Battle.Actor
         /// ゲームオブジェクト
         /// </summary>
         /// <value></value>
-        GameObject gameObject { get; }
+        GameObject gameobject { get; }
+        
+        /// <summary>
+        /// リジッドボディ
+        /// </summary>
+        Rigidbody rigidbody { get; }
         
         /// <summary>
         /// ヒットポイント
@@ -56,7 +61,12 @@ namespace TGS.Domain.Battle.Actor
         /// ゲームオブジェクト
         /// </summary>
         /// <value></value>
-        public GameObject gameObject { get { return this.gameObject; } }
+        public GameObject gameobject { get { return this.gameObject; } }
+        
+        /// <summary>
+        /// リジッドボディ
+        /// </summary>
+        public Rigidbody rigidbody { get; set; }
 
         /// <summary>
         /// ヒットポイント
@@ -83,7 +93,7 @@ namespace TGS.Domain.Battle.Actor
         /// <summary>
         /// 初期化
         /// </summary>
-        public void Initialize()
+        public virtual void Initialize()
         {
             
         }
