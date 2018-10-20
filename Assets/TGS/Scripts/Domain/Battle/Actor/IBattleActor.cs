@@ -17,7 +17,7 @@ namespace TGS.Domain.Battle.Actor
         /// ゲームオブジェクト
         /// </summary>
         /// <value></value>
-        GameObject gameobject { get; }
+        GameObject gameObject { get; }
         
         /// <summary>
         /// リジッドボディ
@@ -61,7 +61,7 @@ namespace TGS.Domain.Battle.Actor
         /// ゲームオブジェクト
         /// </summary>
         /// <value></value>
-        public GameObject gameobject { get { return this.gameObject; } }
+        public GameObject gameObject { get { return this.gameObject; } }
         
         /// <summary>
         /// リジッドボディ
@@ -93,7 +93,7 @@ namespace TGS.Domain.Battle.Actor
         /// <summary>
         /// 初期化
         /// </summary>
-        public virtual void Initialize()
+        public void Initialize()
         {
             
         }
