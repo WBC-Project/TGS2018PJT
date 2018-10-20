@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using TGS.Presenter.UI;
 using UnityEngine;
 
@@ -6,14 +8,24 @@ namespace TGS.Domain.Battle.Actor
     public interface IBattleActorController
     {
         /// <summary>
-        /// 操作対象
-        /// </summary>
-        IBattleActor ControlBattleActor { get; }
-
-        /// <summary>
         /// バーチャルパッド
         /// </summary>
-        VirtualPad VPad { get; }
+        VirtualPad VPad { set; }
+        
+        /// <summary>
+        /// タイヤ用コライダー
+        /// </summary>
+        List<TireData> Tires { set; }
+
+        /// <summary>
+        /// ハンドリング
+        /// </summary>
+        float Handling { get; }
+
+        /// <summary>
+        /// 速度
+        /// </summary>
+        float Speed { get; }
 
         /// <summary>
         /// 移動処理
@@ -21,30 +33,78 @@ namespace TGS.Domain.Battle.Actor
         void Move();
     }
 
-    public class BattleActorController : IBattleActorController
+    [Serializable]
+    public struct TireData
+    {
+        public bool Power;
+        public bool Operation;
+
+        public WheelCollider LeftCollider;
+        public WheelCollider RightCollider;
+
+        public Transform LeftTire;
+        public Transform RightTire;
+    }
+
+    public class BattleActorController : MonoBehaviour, IBattleActorController
     {
         /// <summary>
         /// バーチャルパッド
         /// </summary>
-        public VirtualPad VPad { get; set; }
+        public VirtualPad VPad { private get; set; }
 
         /// <summary>
-        /// 操作対象
+        /// タイヤ用コライダー
         /// </summary>
-        public IBattleActor ControlBattleActor { get; set; } = null;
+        public List<TireData> Tires { private get; set; }
+
+        /// <summary>
+        /// ハンドリング
+        /// </summary>
+        public float Handling { get; set; } = 30.0f;
+
+        /// <summary>
+        /// 速度
+        /// </summary>
+        public float Speed { get; set; } = 400.0f;
 
         /// <summary>
         /// 移動処理
         /// </summary>
-        public void Move()
+        public virtual void Move()
         {
-            Vector2 value = VPad.GetVector();
-            Vector3 newValue = Vector3.zero;
+            Vector2 inputValue = VPad.GetVector();
 
-            newValue.x = value.x;
-            newValue.z = value.y;
+            foreach (var tire in Tires)
+            {
+                if (tire.Operation)
+                {
+                    tire.LeftCollider.steerAngle = inputValue.x * Handling;
+                    tire.RightCollider.steerAngle = inputValue.x * Handling;
+                }
 
-            ControlBattleActor.gameObject.transform.position += newValue;
+                if (tire.Power)
+                {
+                    tire.LeftCollider.motorTorque = inputValue.y * Speed;
+                    tire.RightCollider.motorTorque = inputValue.y * Speed;
+                }
+
+                if (tire.LeftTire == null || tire.RightTire == null)
+                {
+                    continue;
+                }
+                
+                Vector3 tirePos;
+                Quaternion tireRot;
+                
+                tire.RightCollider.GetWorldPose(out tirePos,out tireRot);
+                tire.RightTire.transform.position = tirePos;
+                tire.RightTire.transform.rotation = tireRot;
+                
+                tire.LeftCollider.GetWorldPose(out tirePos,out tireRot);
+                tire.LeftTire.transform.position = tirePos;
+                tire.LeftTire.transform.rotation = tireRot;
+            }
         }
     }
 }

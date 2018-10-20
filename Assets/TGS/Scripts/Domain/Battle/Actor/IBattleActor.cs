@@ -20,6 +20,11 @@ namespace TGS.Domain.Battle.Actor
         GameObject gameObject { get; }
         
         /// <summary>
+        /// リジッドボディ
+        /// </summary>
+        Rigidbody rigidbody { get; }
+        
+        /// <summary>
         /// ヒットポイント
         /// </summary>
         /// <value></value>
@@ -57,6 +62,11 @@ namespace TGS.Domain.Battle.Actor
         /// </summary>
         /// <value></value>
         public GameObject gameObject { get { return this.gameObject; } }
+        
+        /// <summary>
+        /// リジッドボディ
+        /// </summary>
+        public Rigidbody rigidbody { get; set; }
 
         /// <summary>
         /// ヒットポイント
