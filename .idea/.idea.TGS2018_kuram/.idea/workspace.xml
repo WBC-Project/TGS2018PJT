@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73479e27-3bb3-42e0-96b0-420b2bd62ca1" name="Default Changelist" comment="add DebugMenu">
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Resources/Sprites/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Resources/Sprites/UI/NumberFont.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle/IBattleHitDamageListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle/IBattleHitDamageListener.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle/IDamageListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle/IDamageListener.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Utility/SpriteDivide.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Utility/SpriteDivide.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Resources/Sprites.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/NumberFont.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Resources/Sprites/UI/NumberFont.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/NumberFont.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad/Base.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad/Base.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad/Base.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad/Base.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad/Stick.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad/Stick.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad/Stick.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad/Stick.png.meta" afterDir="false" />
-    </list>
+    <list default="true" id="73479e27-3bb3-42e0-96b0-420b2bd62ca1" name="Default Changelist" comment="add DebugMenu" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +44,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.23" value="3" />
@@ -542,7 +523,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.19189766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
