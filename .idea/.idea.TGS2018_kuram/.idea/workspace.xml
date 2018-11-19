@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73479e27-3bb3-42e0-96b0-420b2bd62ca1" name="Default Changelist" comment="add DebugMenu">
-      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGS2018_kuram/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGS2018_kuram/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TGS2018_kuram/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TGS2018_kuram/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DbgButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DbgButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DbgButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DbgButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuMng.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DebugMenuMng.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuMng.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DebugMenuMng.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/ExitButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/ExitButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/ExitButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/ExitButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/IDebugMenuBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/IDebugMenuBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/InstDbgBtn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/InstDbgBtn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/InstDbgBtn.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/InstDbgBtn.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/InstDbgMenul.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/InstDbgMenul.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/InstDbgMenul.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/InstDbgMenul.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Resources/Sprites/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Resources/Sprites/UI/NumberFont.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle/IBattleHitDamageListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle/IBattleHitDamageListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle/IDamageListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Presenter/UI/Battle/IDamageListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Utility/SpriteDivide.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TGS/Scripts/Utility/SpriteDivide.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Resources/Sprites.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/NumberFont.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Resources/Sprites/UI/NumberFont.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/NumberFont.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad/Base.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad/Base.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad/Base.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad/Base.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad/Stick.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad/Stick.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TGS/Sprits/UI/VirtualPad/Stick.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TGS/Sprites/UI/VirtualPad/Stick.png.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +71,9 @@
           <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -86,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="304">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
@@ -97,13 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <marker date="1540342559101" expanded="true" signature="6:45" ph="..." />
-                <marker date="1540342559101" expanded="true" signature="92:768" ph="{...}" />
-                <marker date="1540342559101" expanded="true" signature="250:292" ph="/// 各種パーツ生成 ... " />
-                <marker date="1540342559101" expanded="true" signature="315:766" ph="{...}" />
-                <marker date="1540342559101" expanded="true" signature="355:658" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -111,15 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/IDebugMenuBase.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
+            <state relative-caret-position="80">
               <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-              <folding>
-                <marker date="1539846601356" expanded="false" signature="6:78" ph="..." />
-                <marker date="1539846601356" expanded="true" signature="80:151" ph="/// Baseのインスタンスで、デバッグメニューの中身を定義するクラスに継承させる ... " />
-                <marker date="1539846601356" expanded="true" signature="196:317" ph="{...}" />
-                <marker date="1539846601356" expanded="true" signature="246:253" ph="{...}" />
-                <marker date="1539846601356" expanded="true" signature="308:315" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -127,14 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/ExitButton.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
+            <state relative-caret-position="160">
               <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding>
-                <marker date="1538803204118" expanded="false" signature="6:78" ph="..." />
-                <marker date="1538803204118" expanded="true" signature="119:260" ph="{...}" />
-                <marker date="1538803204118" expanded="true" signature="123:171" ph="/// DebugMenu呼び出し ... " />
-                <marker date="1538803204118" expanded="true" signature="194:258" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -144,10 +124,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
               <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-              <folding>
-                <marker date="1538803204116" expanded="true" signature="19:77" ph="///値をデバッグメニューからやり取りするためのスクリプト ... " />
-                <marker date="1538803204116" expanded="true" signature="207:246" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -155,15 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuBase.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
+            <state relative-caret-position="80">
               <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-              <folding>
-                <marker date="1539845243847" expanded="false" signature="6:78" ph="..." />
-                <marker date="1539845243847" expanded="true" signature="80:128" ph="/// デバッグメニューのベースクラス ... " />
-                <marker date="1539845243847" expanded="true" signature="172:293" ph="{...}" />
-                <marker date="1539845243847" expanded="true" signature="222:229" ph="{...}" />
-                <marker date="1539845243847" expanded="true" signature="284:291" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -171,16 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DbgButton.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
+            <state relative-caret-position="96">
               <caret line="6" selection-start-line="6" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <marker date="1539915698933" expanded="false" signature="6:78" ph="..." />
-                <marker date="1539915698933" expanded="true" signature="118:924" ph="{...}" />
-                <marker date="1539915698933" expanded="true" signature="293:347" ph="/// DebugMenu呼び出し ... " />
-                <marker date="1539915698933" expanded="true" signature="373:922" ph="{...}" />
-                <marker date="1539915698933" expanded="true" signature="428:792" ph="{...}" />
-                <marker date="1539915698933" expanded="true" signature="634:782" ph="/* exitButton = Instantiate(ExitButton, this.transform.position, Quaternion.identity); ... */" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -217,41 +178,42 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-384">
               <folding>
-                <marker date="1538807151478" expanded="true" signature="60:116" ph="/// ダメージ処理のインターフェース ... " />
-                <marker date="1538807151478" expanded="true" signature="156:542" ph="{...}" />
-                <marker date="1538807151478" expanded="true" signature="171:255" ph="/// アクターの取得 ... " />
-                <marker date="1538807151478" expanded="true" signature="301:387" ph="/// ゲームオブジェクト ... " />
-                <marker date="1538807151478" expanded="true" signature="436:491" ph="/// ダメージ処理 ... " />
-                <marker date="1538807151478" expanded="true" signature="622:1782" ph="{...}" />
-                <marker date="1538807151478" expanded="true" signature="711:819" ph="/// 初期化処理としての依存性の注入 ... " />
-                <marker date="1538807151478" expanded="true" signature="873:928" ph="{...}" />
-                <marker date="1538807151478" expanded="true" signature="938:1022" ph="/* ユニークID ... */" />
-                <marker date="1538807151478" expanded="true" signature="1205:1291" ph="/// ゲームオブジェクト ... " />
-                <marker date="1538807151478" expanded="true" signature="1374:1429" ph="/// ダメージ処理 ... " />
-                <marker date="1538807151478" expanded="true" signature="1480:1776" ph="{...}" />
-                <marker date="1538807151478" expanded="true" signature="1692:1765" ph="{...}" />
+                <marker date="1542588811937" expanded="true" signature="53:1784" ph="{...}" />
+                <marker date="1542588811937" expanded="true" signature="60:116" ph="/// ダメージ処理のインターフェース ... " />
+                <marker date="1542588811937" expanded="true" signature="156:542" ph="{...}" />
+                <marker date="1542588811937" expanded="true" signature="171:255" ph="/// アクターの取得 ... " />
+                <marker date="1542588811937" expanded="true" signature="301:387" ph="/// ゲームオブジェクト ... " />
+                <marker date="1542588811937" expanded="true" signature="436:491" ph="/// ダメージ処理 ... " />
+                <marker date="1542588811937" expanded="true" signature="622:1782" ph="{...}" />
+                <marker date="1542588811937" expanded="true" signature="711:819" ph="/// 初期化処理としての依存性の注入 ... " />
+                <marker date="1542588811937" expanded="true" signature="873:928" ph="{...}" />
+                <marker date="1542588811937" expanded="true" signature="938:1022" ph="/* ユニークID ... */" />
+                <marker date="1542588811937" expanded="true" signature="1205:1291" ph="/// ゲームオブジェクト ... " />
+                <marker date="1542588811937" expanded="true" signature="1374:1429" ph="/// ダメージ処理 ... " />
+                <marker date="1542588811937" expanded="true" signature="1480:1776" ph="{...}" />
+                <marker date="1542588811937" expanded="true" signature="1692:1765" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+            <state relative-caret-position="432">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <marker date="1540522491723" expanded="false" signature="6:83" ph="..." />
-                <marker date="1540522491723" expanded="true" signature="85:148" ph="/// デバッグメニューのインスタンス作成、表示、データの受け渡し等 ... " />
-                <marker date="1540522491723" expanded="true" signature="222:691" ph="{...}" />
-                <marker date="1540522491723" expanded="true" signature="361:409" ph="/// DebugMenu呼び出し ... " />
-                <marker date="1540522491723" expanded="true" signature="432:689" ph="{...}" />
-                <marker date="1540522491723" expanded="true" signature="472:631" ph="{...}" />
+                <marker date="1542588811974" expanded="false" signature="6:83" ph="..." />
+                <marker date="1542588811974" expanded="true" signature="85:148" ph="/// デバッグメニューのインスタンス作成、表示、データの受け渡し等 ... " />
+                <marker date="1542588811974" expanded="true" signature="222:691" ph="{...}" />
+                <marker date="1542588811974" expanded="true" signature="361:409" ph="/// DebugMenu呼び出し ... " />
+                <marker date="1542588811974" expanded="true" signature="432:689" ph="{...}" />
+                <marker date="1542588811974" expanded="true" signature="472:631" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -268,17 +230,17 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Application/Manager/SingletonMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/IDebugMenuBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuElement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Application/Manager/SingletonMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/InstDbgBtn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/ExitButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/IDebugMenuBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/InstDbgBtn.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DbgButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DebugMenuMng.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DbgButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/InstDbgMenul.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -316,6 +278,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TGS2018_kuram" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -392,6 +366,23 @@
               <item name="TGS" type="1045f7f1:UnityExplorerNode" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="Domain" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Domain" type="1045f7f1:UnityExplorerNode" />
+              <item name="Battle" type="1045f7f1:UnityExplorerNode" />
+              <item name="Actor" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Domain" type="1045f7f1:UnityExplorerNode" />
               <item name="Menu" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
@@ -402,12 +393,6 @@
               <item name="Domain" type="1045f7f1:UnityExplorerNode" />
               <item name="Menu" type="1045f7f1:UnityExplorerNode" />
               <item name="DebugMenu" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="TGS" type="1045f7f1:UnityExplorerNode" />
-              <item name="Sprits" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
@@ -424,18 +409,6 @@
           </expand>
           <select />
         </subPane>
-      </pane>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="TGS2018_kuram" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -508,6 +481,7 @@
       <workItem from="1540341255994" duration="6362000" />
       <workItem from="1540513451584" duration="6667000" />
       <workItem from="1541034478558" duration="2262000" />
+      <workItem from="1542588935936" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="add DebugMenu">
       <created>1536691949382</created>
@@ -555,7 +529,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65521000" />
+    <option name="totallyTimeSpent" value="66763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,7 +544,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.18976545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.19189766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50149256" side_tool="true" weight="0.18336888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -585,7 +559,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" weight="0.30911064" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49671772" visible="true" weight="0.2733189" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49671772" visible="true" weight="0.2733189" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50159913" side_tool="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Unity" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -677,7 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="304">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
@@ -686,40 +660,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <marker date="1540342559101" expanded="true" signature="6:45" ph="..." />
-            <marker date="1540342559101" expanded="true" signature="92:768" ph="{...}" />
-            <marker date="1540342559101" expanded="true" signature="250:292" ph="/// 各種パーツ生成 ... " />
-            <marker date="1540342559101" expanded="true" signature="315:766" ph="{...}" />
-            <marker date="1540342559101" expanded="true" signature="355:658" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/IDebugMenuBase.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
+        <state relative-caret-position="80">
           <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <marker date="1539846601356" expanded="false" signature="6:78" ph="..." />
-            <marker date="1539846601356" expanded="true" signature="80:151" ph="/// Baseのインスタンスで、デバッグメニューの中身を定義するクラスに継承させる ... " />
-            <marker date="1539846601356" expanded="true" signature="196:317" ph="{...}" />
-            <marker date="1539846601356" expanded="true" signature="246:253" ph="{...}" />
-            <marker date="1539846601356" expanded="true" signature="308:315" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/ExitButton.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="160">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <marker date="1538803204118" expanded="false" signature="6:78" ph="..." />
-            <marker date="1538803204118" expanded="true" signature="119:260" ph="{...}" />
-            <marker date="1538803204118" expanded="true" signature="123:171" ph="/// DebugMenu呼び出し ... " />
-            <marker date="1538803204118" expanded="true" signature="194:258" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,39 +681,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <marker date="1538803204116" expanded="true" signature="19:77" ph="///値をデバッグメニューからやり取りするためのスクリプト ... " />
-            <marker date="1538803204116" expanded="true" signature="207:246" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuBase.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
+        <state relative-caret-position="80">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <marker date="1539845243847" expanded="false" signature="6:78" ph="..." />
-            <marker date="1539845243847" expanded="true" signature="80:128" ph="/// デバッグメニューのベースクラス ... " />
-            <marker date="1539845243847" expanded="true" signature="172:293" ph="{...}" />
-            <marker date="1539845243847" expanded="true" signature="222:229" ph="{...}" />
-            <marker date="1539845243847" expanded="true" signature="284:291" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/old/DbgButton.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
+        <state relative-caret-position="96">
           <caret line="6" selection-start-line="6" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <marker date="1539915698933" expanded="false" signature="6:78" ph="..." />
-            <marker date="1539915698933" expanded="true" signature="118:924" ph="{...}" />
-            <marker date="1539915698933" expanded="true" signature="293:347" ph="/// DebugMenu呼び出し ... " />
-            <marker date="1539915698933" expanded="true" signature="373:922" ph="{...}" />
-            <marker date="1539915698933" expanded="true" signature="428:792" ph="{...}" />
-            <marker date="1539915698933" expanded="true" signature="634:782" ph="/* exitButton = Instantiate(ExitButton, this.transform.position, Quaternion.identity); ... */" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,38 +728,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="432">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <marker date="1538807151478" expanded="true" signature="60:116" ph="/// ダメージ処理のインターフェース ... " />
-            <marker date="1538807151478" expanded="true" signature="156:542" ph="{...}" />
-            <marker date="1538807151478" expanded="true" signature="171:255" ph="/// アクターの取得 ... " />
-            <marker date="1538807151478" expanded="true" signature="301:387" ph="/// ゲームオブジェクト ... " />
-            <marker date="1538807151478" expanded="true" signature="436:491" ph="/// ダメージ処理 ... " />
-            <marker date="1538807151478" expanded="true" signature="622:1782" ph="{...}" />
-            <marker date="1538807151478" expanded="true" signature="711:819" ph="/// 初期化処理としての依存性の注入 ... " />
-            <marker date="1538807151478" expanded="true" signature="873:928" ph="{...}" />
-            <marker date="1538807151478" expanded="true" signature="938:1022" ph="/* ユニークID ... */" />
-            <marker date="1538807151478" expanded="true" signature="1205:1291" ph="/// ゲームオブジェクト ... " />
-            <marker date="1538807151478" expanded="true" signature="1374:1429" ph="/// ダメージ処理 ... " />
-            <marker date="1538807151478" expanded="true" signature="1480:1776" ph="{...}" />
-            <marker date="1538807151478" expanded="true" signature="1692:1765" ph="{...}" />
+            <marker date="1542588811974" expanded="false" signature="6:83" ph="..." />
+            <marker date="1542588811974" expanded="true" signature="85:148" ph="/// デバッグメニューのインスタンス作成、表示、データの受け渡し等 ... " />
+            <marker date="1542588811974" expanded="true" signature="222:691" ph="{...}" />
+            <marker date="1542588811974" expanded="true" signature="361:409" ph="/// DebugMenu呼び出し ... " />
+            <marker date="1542588811974" expanded="true" signature="432:689" ph="{...}" />
+            <marker date="1542588811974" expanded="true" signature="472:631" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Menu/DebugMenu/DebugMenuManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/TGS/Scripts/Domain/Battle/Actor/IBattleActorDamage.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        <state relative-caret-position="-384">
           <folding>
-            <marker date="1540522491723" expanded="false" signature="6:83" ph="..." />
-            <marker date="1540522491723" expanded="true" signature="85:148" ph="/// デバッグメニューのインスタンス作成、表示、データの受け渡し等 ... " />
-            <marker date="1540522491723" expanded="true" signature="222:691" ph="{...}" />
-            <marker date="1540522491723" expanded="true" signature="361:409" ph="/// DebugMenu呼び出し ... " />
-            <marker date="1540522491723" expanded="true" signature="432:689" ph="{...}" />
-            <marker date="1540522491723" expanded="true" signature="472:631" ph="{...}" />
+            <marker date="1542588811937" expanded="true" signature="53:1784" ph="{...}" />
+            <marker date="1542588811937" expanded="true" signature="60:116" ph="/// ダメージ処理のインターフェース ... " />
+            <marker date="1542588811937" expanded="true" signature="156:542" ph="{...}" />
+            <marker date="1542588811937" expanded="true" signature="171:255" ph="/// アクターの取得 ... " />
+            <marker date="1542588811937" expanded="true" signature="301:387" ph="/// ゲームオブジェクト ... " />
+            <marker date="1542588811937" expanded="true" signature="436:491" ph="/// ダメージ処理 ... " />
+            <marker date="1542588811937" expanded="true" signature="622:1782" ph="{...}" />
+            <marker date="1542588811937" expanded="true" signature="711:819" ph="/// 初期化処理としての依存性の注入 ... " />
+            <marker date="1542588811937" expanded="true" signature="873:928" ph="{...}" />
+            <marker date="1542588811937" expanded="true" signature="938:1022" ph="/* ユニークID ... */" />
+            <marker date="1542588811937" expanded="true" signature="1205:1291" ph="/// ゲームオブジェクト ... " />
+            <marker date="1542588811937" expanded="true" signature="1374:1429" ph="/// ダメージ処理 ... " />
+            <marker date="1542588811937" expanded="true" signature="1480:1776" ph="{...}" />
+            <marker date="1542588811937" expanded="true" signature="1692:1765" ph="{...}" />
           </folding>
         </state>
       </provider>
