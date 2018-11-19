@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// デバッグメニューのベースクラス
+/// </summary>
 public class DebugMenuBase : MonoBehaviour {
 
 	// Use this for initialization

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// デバッグメニュー本体の描画
+/// </summary>
 public class DebugMenu : MonoBehaviour {
 
 	// Use this for initialization

@@ -20,11 +20,11 @@ public class DbgButton : MonoBehaviour
             //パネル、Exitの順で生成
             debugPanel = Instantiate(DebugPanel, this.transform.position, Quaternion.identity);
             debugPanel.transform.parent = canvas.transform;
-            exitButton = Instantiate(ExitButton, this.transform.position, Quaternion.identity);
-            exitButton.transform.parent = canvas.transform;
+           // exitButton = Instantiate(ExitButton, this.transform.position, Quaternion.identity);
+            //exitButton.transform.parent = canvas.transform;
         }
         //パネル、Exitの順でアクティブ化
         debugPanel.gameObject.SetActive(true);
-        exitButton.gameObject.SetActive(true);
+       // exitButton.gameObject.SetActive(true);
     }
 }
